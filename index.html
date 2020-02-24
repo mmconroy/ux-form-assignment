@@ -1,29 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <meta name="description" content="Kenzie Form Practice">
-    <meta name="author" content="Kenzie and Colorlib Templates">
-    <meta name="keywords" content="Kenzie Form Practice">
+    <meta name="description" content="Kenzie Form Practice" />
+    <meta name="author" content="Kenzie and Colorlib Templates" />
+    <meta name="keywords" content="Kenzie Form Practice" />
 
     <!-- Title Page-->
     <title>Kenzie Form Practice</title>
 
     <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
 
     <!-- CSS-->
-    <link href="css/base.css" rel="stylesheet" media="all">
-    <link href="css/main.css" rel="stylesheet" media="all">
-</head>
+    <link href="css/base.css" rel="stylesheet" media="all" />
+    <link href="css/main.css" rel="stylesheet" media="all" />
+  </head>
 
-<body>
+  <body>
+    <div class="screen-wrapper">
+      <div class="card-wrapper">
+        <img src="./images/bg-heading-03.jpg" alt="dude" />
+        <form>
+          <h1 class="heading">Registration Info</h1>
 
-    <!-- Your html here -->
-</body>
+          <div class="field">
+            <label for="name"></label>
+            <input type="name" id="name" name="name" placeholder="Name" />
+          </div>
 
+          <div class="field">
+            <label for="birthdate"></label>
+            <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              placeholder="mm/dd/yyyy"
+            />
+          </div>
+
+          <div class="field">
+            <label for="experience" placeholder="Experience"></label>
+            <select id="experience">
+              <option selected="selected">Experience</option>
+              <option value="beginner">Beginner</option>
+              <option value="intermediate">Intermediate</option>
+              <option value="expert">Expert</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="email"></label>
+            <input type="text" id="email" name="email" placeholder="Email" />
+          </div>
+
+          <div class="field">
+            <label for="phone"></label>
+            <input
+              type="phone"
+              id="phone"
+              name="phone"
+              placeholder="Phone (Optional)"
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

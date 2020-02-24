@@ -1,2 +1,139 @@
+html {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#fbc2eb),
+    to(#a18cd1)
+  );
+  background: -webkit-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -moz-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: -o-linear-gradient(bottom, #fbc2eb 0%, #a18cd1 100%);
+  background: linear-gradient(to top, #fbc2eb 0%, #a18cd1 100%);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-/*  Put your CSS Here */
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+}
+
+.screen-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  min-height: 400px;
+  background-color: black;
+  color: #ffffff;
+}
+
+img {
+  align-self: flex-end;
+  width: 400px;
+  height: 400px;
+}
+
+.selectWrapper:after {
+  content: ">";
+  font: 17px "Consolas", monospace;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  pointer-events: none;
+}
+
+select {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.field > select {
+  background-color: black;
+  color: white;
+}
+
+.field {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.field > input {
+  display: flex;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid gray;
+  margin: 4px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  color: white;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: white;
+}
+
+.field ::placeholder {
+  color: white;
+}
+
+.birthdate ::placeholder {
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+  height: auto;
+}
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 1rem;
+  background-color: chartreuse;
+  color: white;
+  padding: 16px;
+  margin-top: 32px;
+}
+
+@media (max-width: 788px) {
+  .card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
